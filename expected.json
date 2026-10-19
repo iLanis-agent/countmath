@@ -1,0 +1,353 @@
+[
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "3"
+  ],
+  "expected": "Picking 3 of 10 things: 720 ways when order matters (10 x 9 x 8), 120 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "52",
+   "5"
+  ],
+  "expected": "Picking 5 of 52 things: 311,875,200 ways when order matters (52 x 51 x 50 x 49 x 48), 2,598,960 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "5",
+   "5"
+  ],
+  "expected": "Picking 5 of 5 things: 120 ways when order matters (5 x 4 x 3 x 2 x 1), 1 way when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "Picking 1 of 1 thing: 1 way when order matters, 1 way when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "0"
+  ],
+  "expected": "Picking 0 of 10 things: 1 way when order matters, 1 way when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "1"
+  ],
+  "expected": "Picking 1 of 10 things: 10 ways when order matters, 10 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "2"
+  ],
+  "expected": "Picking 2 of 10 things: 90 ways when order matters (10 x 9), 45 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "49",
+   "6"
+  ],
+  "expected": "Picking 6 of 49 things: 10,068,347,520 ways when order matters (49 x 48 x 47 x 46 x 45 x 44), 13,983,816 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "100",
+   "50"
+  ],
+  "expected": "Picking 50 of 100 things: about 3.07 x 10^93 ways when order matters, about 1.01 x 10^29 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "100",
+   "100"
+  ],
+  "expected": "Picking 100 of 100 things: about 9.33 x 10^157 ways when order matters, 1 way when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "100",
+   "7"
+  ],
+  "expected": "Picking 7 of 100 things: 80,678,106,432,000 ways when order matters, 16,007,560,800 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "20",
+   "6"
+  ],
+  "expected": "Picking 6 of 20 things: 27,907,200 ways when order matters (20 x 19 x 18 x 17 x 16 x 15), 38,760 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "2",
+   "1"
+  ],
+  "expected": "Picking 1 of 2 things: 2 ways when order matters, 2 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "26",
+   "4"
+  ],
+  "expected": "Picking 4 of 26 things: 358,800 ways when order matters (26 x 25 x 24 x 23), 14,950 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   " 8 ",
+   " 3 "
+  ],
+  "expected": "Picking 3 of 8 things: 336 ways when order matters (8 x 7 x 6), 56 ways when order does not matter."
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "3",
+   "4"
+  ],
+  "expected": "ERR:picks cannot be more than things"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "0",
+   "0"
+  ],
+  "expected": "ERR:things must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "101",
+   "1"
+  ],
+  "expected": "ERR:things must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "-1"
+  ],
+  "expected": "ERR:picks must be a whole number from 0 to 100"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "abc",
+   "1"
+  ],
+  "expected": "ERR:things must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "10",
+   "1.5"
+  ],
+  "expected": "ERR:picks must be a whole number from 0 to 100"
+ },
+ {
+  "fn": "orderTruth",
+  "args": [
+   "",
+   "1"
+  ],
+  "expected": "ERR:things must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "10"
+  ],
+  "expected": "10 people each shaking hands once with every other person make 45 handshakes (10 x 9 / 2, not 10 x 9 = 90)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "2"
+  ],
+  "expected": "2 people each shaking hands once with every other person make 1 handshake (2 x 1 / 2, not 2 x 1 = 2)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "3"
+  ],
+  "expected": "3 people each shaking hands once with every other person make 3 handshakes (3 x 2 / 2, not 3 x 2 = 6)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "23"
+  ],
+  "expected": "23 people each shaking hands once with every other person make 253 handshakes (23 x 22 / 2, not 23 x 22 = 506)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "1000"
+  ],
+  "expected": "1000 people each shaking hands once with every other person make 499,500 handshakes (1000 x 999 / 2, not 1000 x 999 = 999,000)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "1000000"
+  ],
+  "expected": "1000000 people each shaking hands once with every other person make 499,999,500,000 handshakes (1000000 x 999999 / 2, not 1000000 x 999999 = 999,999,000,000)."
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "1"
+  ],
+  "expected": "ERR:people must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "1000001"
+  ],
+  "expected": "ERR:people must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "abc"
+  ],
+  "expected": "ERR:people must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "pairTruth",
+  "args": [
+   "0"
+  ],
+  "expected": "ERR:people must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "BANANA"
+  ],
+  "expected": "The letters of BANANA (6 letters) can be arranged in 60 different orders, instead of 720, because A appears 3 times and N appears 2 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "CAT"
+  ],
+  "expected": "The letters of CAT (3 letters) can be arranged in 6 different orders, because no letter repeats."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "AA"
+  ],
+  "expected": "The letters of AA (2 letters) can be arranged in 1 different order, instead of 2, because A appears 2 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "AB"
+  ],
+  "expected": "The letters of AB (2 letters) can be arranged in 2 different orders, because no letter repeats."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "mississippi"
+  ],
+  "expected": "The letters of MISSISSIPPI (11 letters) can be arranged in 34,650 different orders, instead of 39,916,800, because I appears 4 times, P appears 2 times and S appears 4 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "abcdefghijklmnopqrst"
+  ],
+  "expected": "The letters of ABCDEFGHIJKLMNOPQRST (20 letters) can be arranged in about 2.43 x 10^18 different orders, because no letter repeats."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "aaaaaaaaaaaaaaaaaaaa"
+  ],
+  "expected": "The letters of AAAAAAAAAAAAAAAAAAAA (20 letters) can be arranged in 1 different order, instead of about 2.43 x 10^18, because A appears 20 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "LETTER"
+  ],
+  "expected": "The letters of LETTER (6 letters) can be arranged in 180 different orders, instead of 720, because E appears 2 times and T appears 2 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   " level "
+  ],
+  "expected": "The letters of LEVEL (5 letters) can be arranged in 30 different orders, instead of 120, because E appears 2 times and L appears 2 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "BOOKKEEPER"
+  ],
+  "expected": "The letters of BOOKKEEPER (10 letters) can be arranged in 151,200 different orders, instead of 3,628,800, because E appears 3 times, K appears 2 times and O appears 2 times."
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "A"
+  ],
+  "expected": "ERR:enter 2 to 20 letters, A to Z only"
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "abcdefghijklmnopqrstu"
+  ],
+  "expected": "ERR:enter 2 to 20 letters, A to Z only"
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "two words"
+  ],
+  "expected": "ERR:enter 2 to 20 letters, A to Z only"
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   "abc1"
+  ],
+  "expected": "ERR:enter 2 to 20 letters, A to Z only"
+ },
+ {
+  "fn": "wordTruth",
+  "args": [
+   ""
+  ],
+  "expected": "ERR:enter 2 to 20 letters, A to Z only"
+ }
+]
