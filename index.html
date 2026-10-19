@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Count Math - counting arrangements arithmetic</title>
+<style>
+  :root { --accent:#6a3fa0; --ink:#1d1030; --paper:#f7f2fc; --soft:#e8dcf5; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#7a5aa0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Count Math</h1>
+  <p class="lede">A group of 10 people makes 45 handshakes, not 90.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Count Math counts arrangements, pairs and repeated letters from the numbers and word you type. It assumes the counting rules it states, such as every pick being different. It does not know your real situation, so check the rules fit it.
+  </div>
+  <section>
+    <h2>The order truth</h2>
+    <p>Picking 3 of 10 things: 720 ways when order matters (10 x 9 x 8), 120 ways when order does not matter.</p>
+  </section>
+  <section>
+    <h2>The pair truth</h2>
+    <p>10 people each shaking hands once with every other person make 45 handshakes (10 x 9 / 2, not 10 x 9 = 90).</p>
+  </section>
+  <section>
+    <h2>The word truth</h2>
+    <p>The letters of BANANA (6 letters) can be arranged in 60 different orders, instead of 720, because A appears 3 times and N appears 2 times.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Count Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
